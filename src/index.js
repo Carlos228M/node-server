@@ -1,3 +1,7 @@
-import { printHello } from '#lib/hello.js'
+import expressApp from '#config/express.js'
+import { createServer } from 'http'
 
-printHello()
+const PORT = 3000
+
+const httpServer = createServer(expressApp)
+httpServer.listen(PORT, () => console.log(`Servidor HTTP en el puerto ${PORT}`))
