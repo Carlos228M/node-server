@@ -1,4 +1,4 @@
-import userRouter from '#routers/user.router.js'
+import userRouter from '#routers/user.routes.js'
 import express, { json, text } from 'express'
 import cookieParser from 'cookie-parser'
 import { fileURLToPath } from 'url'
@@ -7,6 +7,7 @@ import { httpLogger } from './logger.js'
 
 const expressApp = express()
 const PATH = dirname(fileURLToPath(import.meta.url))
+
 // App middlewares
 expressApp.use(cookieParser())
 expressApp.use(json())

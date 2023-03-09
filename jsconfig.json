@@ -8,7 +8,10 @@
          "#config/*": ["./src/config/*"],
          "#routers/*": ["./src/routers/*"],
          "#services/*": ["./src/services/*"],
-         "#dtos/*": ["./src/dtos/*"]
+         "#dtos/*": ["./src/dtos/*"],
+         "#controllers/*": ["./src/controllers/*"],
+         "#schemas/*": ["./src/schemas/*"],
+         "#constants/*": ["./src/constants/*"]
       }
    }
 }
